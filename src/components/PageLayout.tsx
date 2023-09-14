@@ -2,6 +2,7 @@ import React from 'react';
 import { motion} from 'framer-motion';
 import { usePathname } from 'next/navigation';
 import Head from 'next/head';
+import '../app/globals.css';
 import Navbar from "@/components/Navbar";
 
 const AllLayout = ({ children }: { children: React.ReactNode }) => {

@@ -1,20 +1,32 @@
 export const uedata = [
     {
-        title: "Shortcut Showdup",
-        Date: "2023-05-01",
-        Venue: "Online",
-        Description: "Just some test data "
+        image: '/ShortShow_banner.jpg',
+        imageAlt: 'Banner',
+        title: 'Shortcut Showdown',
+        organizer1: 'Nihal Mohan',
+        date:'25-07-2022',
+        venue:'SMVL51',
+        description:'No Mouse',
+        winner: 'Me, Haha',
     },
     {
-        title: "Blah arena",
-        Date: "2023-05-015",
-        Venue: "Online",
-        Description: "Just some test data 2"
+        image: '/ShortShow_banner.jpg',
+        imageAlt: 'Banner',
+        title: 'Shortcut Showdown',
+        organizer1: 'Nihal Mohan',
+        date:'25-07-2022',
+        venue:'SMVL51',
+        description:'No Mouse',
+        winner: 'Me, Haha',
     },
     {
-        title: "Code capture",
-        Date: "2023-05-06",
-        Venue: "Online",
-        Description: "Just some test data 3"
-    },
+        image: '/ShortShow_banner.jpg',
+        imageAlt: 'Banner',
+        title: 'Shortcut Showdown',
+        organizer1: 'Nihal Mohan',
+        date:'25-07-2022',
+        venue:'SMVL51',
+        description:'No Mouse',
+        winner: 'Me, Haha',
+    }
 ]

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import NextLink from 'next/link';
-import TASCLogoLight from '@/assets/img/TASCLogoLight.png';
-import TASCLogoDark from '@/assets/img/TASCLogoDark.png';
+import TASCLogoLight from '../../public/TASCLogoLight.png';
+import TASCLogoDark from '../../public/TASCLogoDark.png';
 import Image from 'next/image';
 import useDarkSide from '@/components/UseDarkSide';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
@@ -68,7 +68,9 @@ const Navbar = () => {
                 }}
                 className={'z-50 absolute h-screen w-full'}
             >
-                <div className={'hidden md:flex bg-white dark:bg-black text-black dark:text-white items-center justify-between py-10 px-10'}>
+                <div
+                    className={'hidden md:flex bg-white dark:bg-black text-black dark:text-white items-center justify-between py-10 px-10 border-b mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg'}
+                >
                     <Image
                         src={colorTheme === 'light' ? TASCLogoLight : TASCLogoDark}
                         width={100}
@@ -79,7 +81,7 @@ const Navbar = () => {
                     <ul className={'flex space-x-5'}>
                         {NAV_ITEMS.map((item) => (
                             <NextLink key={item.title} href={item.href}>
-                                <li>
+                                <li className={'text-2xl'}>
                                     {item.title}
                                 </li>
                             </NextLink>

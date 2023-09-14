@@ -97,34 +97,38 @@ const Navbar = () => {
                         alt={'TASC'}
                     />
 
-                    <AiOutlineMenu size={30} onClick={toggleMenu} />
+
+                    <div className={'flex space-x-10'}>
+                        <DarkModeSwitch
+                            checked={darkSide}
+                            onChange={toggleDarkMode}
+                            size={28}
+                            className="duration-200"
+                        />
+                        <AiOutlineMenu size={30} onClick={toggleMenu} />
+                    </div>
 
                     <motion.div
-                        className={`h-screen fixed w-64 bg-gray-800 p-4 top-0 right-0 transform ${
+                        className={`h-full fixed  w-64 text-white dark:text-black bg-black dark:bg-white p-4 top-0 right-0 transform ${
                             isOpen ? 'translate-x-0' : 'translate-x-full'
                         }`}
                         initial={false}
                         animate={menuAnimation}
                     >
-                        <AiOutlineClose
-                            size={30}
-                            onClick={toggleMenu}
-                            style={{ cursor: 'pointer' }}
-                        />
-                        <ul className="h-full space-y-4 text-white">
+                        <div className={'flex w-full justify-end px-8 py-6'}>
+                            <AiOutlineClose
+                                size={30}
+                                onClick={toggleMenu}
+                                style={{ cursor: 'pointer' }}
+                            />
+                        </div>
+
+                        <ul className="h-full text-2xl pt-10 text-center">
                             {NAV_ITEMS.map((item) => (
                                 <NextLink key={item.title} href={item.href}>
-                                    <li>{item.title}</li>
+                                    <li className={' mb-10'}>{item.title}</li>
                                 </NextLink>
                             ))}
-                            <li>
-                                <DarkModeSwitch
-                                    checked={darkSide}
-                                    onChange={toggleDarkMode}
-                                    size={28}
-                                    className="duration-200"
-                                />
-                            </li>
                         </ul>
                     </motion.div>
                 </div>

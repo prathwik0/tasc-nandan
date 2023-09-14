@@ -66,7 +66,7 @@ const Navbar = () => {
                         clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
                     },
                 }}
-                className={'z-50'}
+                className={'z-50 absolute h-screen w-full'}
             >
                 <div className={'hidden md:flex bg-white dark:bg-black text-black dark:text-white items-center justify-between py-10 px-10'}>
                     <Image

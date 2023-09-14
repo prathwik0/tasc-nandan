@@ -1,14 +1,11 @@
+'use client'
+import React from 'react';
+import Home from "@/components/Home";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
-      <div className={'bg-black w-full h-screen'}>
-        <h1
-            className={'flex justify-center items-center w-full h-screen text-white text-6xl font-bold'}
-        >
-            TASC NMAMIT
-        </h1>
-      </div>
+      <Home />
     </>
   )
 }

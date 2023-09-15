@@ -37,7 +37,7 @@ const AllLayout = ({ children }: { children: React.ReactNode }) => {
             <div className="z-50">
                 <Navbar />
             </div>
-            <div className={'dark:text-white dark:bg-black text-black bg-white'}>
+            <div className={'dark:text-white dark:bg-[#000027] text-black bg-[#ECCBFF]'}>
                 {children}
             </div>
         </motion.div>

@@ -69,7 +69,7 @@ const Navbar = () => {
                 className={'z-50 absolute h-screen w-full'}
             >
                 <div
-                    className={'hidden md:flex bg-white dark:bg-black text-black dark:text-white items-center justify-between py-10 px-10 border-b mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg'}
+                    className={'hidden md:flex bg-[#ECCBFF] rounded-b-xl dark:bg-[#000027]  text-black dark:text-white items-center justify-between py-10 px-10 border-b mx-2 border-zinc-300 dark:border-zinc-800 drop-shadow-md shadow-slate-100 dark:shadow-white'}
                 >
                     <Image
                         src={colorTheme === 'light' ? TASCLogoLight : TASCLogoDark}
@@ -91,7 +91,7 @@ const Navbar = () => {
                     <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={28} className="duration-200" />
                 </div>
 
-                <div className="flex md:hidden bg-white dark:bg-black text-black dark:text-white items-center justify-between py-10 px-10 relative">
+                <div className="flex md:hidden bg-[#ECCBFF] dark:bg-[#000027]  text-black dark:text-white items-center justify-between py-10 px-10 relative mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg">
                     <Image
                         src={colorTheme === 'light' ? TASCLogoLight : TASCLogoDark}
                         width={80}

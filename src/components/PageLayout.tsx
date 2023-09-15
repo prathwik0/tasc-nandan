@@ -5,6 +5,7 @@ import Head from 'next/head';
 import '../app/globals.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import {Analytics} from "@vercel/analytics/react";
 
 const AllLayout = ({ children }: { children: React.ReactNode }) => {
     const router = usePathname();
@@ -42,6 +43,7 @@ const AllLayout = ({ children }: { children: React.ReactNode }) => {
                 {children}
             </div>
             <Footer />
+            <Analytics />
         </motion.div>
     );
 };

@@ -15,11 +15,11 @@ const EventPage: React.FC = () => {
     return (
         <>
             <div className={'pt-44 space-y-16  h-full'}>
-                <div className={'flex w-full justify-center space-x-16 font-bold'}>
-                    <button className={'text-2xl'} onClick={() => handleButtonClick('previous')}>
+                <div className={'flex w-full justify-center md:space-x-16 space-x-8 font-bold'}>
+                    <button className={'md:text-2xl text-xl'} onClick={() => handleButtonClick('previous')}>
                         Previous Events
                     </button>
-                    <button className={'text-2xl'} onClick={() => handleButtonClick('upcoming')}>
+                    <button className={'md:text-2xl text-xl'} onClick={() => handleButtonClick('upcoming')}>
                         Upcoming Events
                     </button>
                 </div>

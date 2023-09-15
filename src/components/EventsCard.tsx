@@ -1,9 +1,6 @@
-import React,{useState, useEffect} from 'react';
-import Image from 'next/image';
-import {pedata} from '@/data/PEventsData';
-import {uedata} from "@/data/UEventsData";
-import {BsGithub, BsInstagram, BsLinkedin} from "react-icons/bs";
-import NextLink from "next/link";
+import React, { useState, useEffect } from 'react';
+import { pedata } from '@/data/PEventsData';
+import { uedata } from '@/data/UEventsData';
 
 interface EventsDataProps {
     title: string;
@@ -18,8 +15,7 @@ interface EventsDataProps {
     reportLink?: string;
 }
 
-
-interface EventsCardProps{
+interface EventsCardProps {
     type: string;
 }
 
@@ -33,7 +29,7 @@ const EventsCard: React.FC<EventsCardProps> = ({ type }) => {
     };
 
     useEffect(() => {
-        if (type === "upcoming") {
+        if (type === 'upcoming') {
             setData(uedata);
         } else {
             setData(pedata);
@@ -43,9 +39,9 @@ const EventsCard: React.FC<EventsCardProps> = ({ type }) => {
     return (
         <>
             <div className={'md:grid lg:grid-cols-4 md:grid-cols-3 gap-20 mx-20 md:space-y-0 space-y-10 pb-32'}>
-                {data.map((item,index) => (
-                    <div key={index}>
-                        <div className={'bg-[#f3e7fb] dark:bg-[#272c3a] rounded-lg shadow-xl dark:drop-shadow-md dark:shadow-gray-700  py-8 px-5'}>
+                {data.map((item, index) => (
+                    <div key={index} className="flex flex-col">
+                        <div className={'bg-[#f3e7fb] dark:bg-[#272c3a] rounded-lg shadow-xl dark:drop-shadow-md dark:shadow-gray-700  py-8 px-5 flex-1'}>
                             <div className={'flex justify-center'}>
                                 <img src={item.image} alt={item.title} className={'object-cover border border-[#e5c6fc] dark:border-[#121928]'}/>
                             </div>

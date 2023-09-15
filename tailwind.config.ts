@@ -9,6 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      flex: {
+        '1': '1 1 0%',
+        '2': '2 2 0%',
+        '3': '3 3 0%',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

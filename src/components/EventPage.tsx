@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import EventsCard from "@/components/EventsCard";
 
-type EventType = 'previous' | 'upcoming'; // Define the possible event types
+type EventType = 'previous' | 'upcoming';
 
 const EventPage: React.FC = () => {
     const [type, setType] = useState<EventType>('upcoming');
@@ -10,16 +10,14 @@ const EventPage: React.FC = () => {
         setType(newType);
     };
 
-    console.log(type);
-
     return (
         <>
             <div className={'pt-44 space-y-16  h-full'}>
                 <div className={'flex w-full justify-center md:space-x-16 space-x-8 font-bold'}>
-                    <button className={'md:text-2xl text-xl'} onClick={() => handleButtonClick('previous')}>
+                    <button className={`md:text-2xl text-xl ${type === 'previous' ? 'underline underline-offset-4' : 'no-underline'}`} onClick={() => handleButtonClick('previous')}>
                         Previous Events
                     </button>
-                    <button className={'md:text-2xl text-xl'} onClick={() => handleButtonClick('upcoming')}>
+                    <button className={`md:text-2xl text-xl ${type === 'upcoming' ? 'underline underline-offset-4' : 'no-underline'}`} onClick={() => handleButtonClick('upcoming')}>
                         Upcoming Events
                     </button>
                 </div>

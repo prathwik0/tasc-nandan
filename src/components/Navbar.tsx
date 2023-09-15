@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import NextLink from 'next/link';
 import TASCLogoLight from '../../public/TASCLogoLight.png';
-import TASCLogoDark from '../../public/TASCLogoDark.png';
 import Image from 'next/image';
 import useDarkSide from '@/components/UseDarkSide';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
@@ -80,11 +79,10 @@ const Navbar = () => {
                 className={'z-50 fixed w-full h-full md:h-auto'}
             >
                 <div
-                    className={'hidden md:flex bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-8 px-10 border-b mx-2 border-zinc-300 dark:border-zinc-800 drop-shadow-md shadow-slate-100 dark:shadow-white '}
+                    className={'hidden md:flex bg-[#ECDBFF] border-zinc-300 dark:border-zinc-800 rounded-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-8 px-10 drop-shadow-md shadow-slate-100 dark:shadow-white '}
                 >
                     <NextLink href={'/'}>
                         <Image
-                            // colorTheme === 'light' ? TASCLogoLight : TASCLogoDark
                             src={TASCLogoLight}
                             width={100}
                             height={100}
@@ -106,7 +104,7 @@ const Navbar = () => {
                     <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={28} className="duration-200" />
                 </div>
 
-                <div className=" flex md:hidden bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-10 px-10 relative mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg">
+                <div className=" flex md:hidden bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-10 px-10 relative border border-zinc-300 dark:border-zinc-800 shadow-lg">
                     <NextLink href={'/'}>
                         <Image
                             src={TASCLogoLight}

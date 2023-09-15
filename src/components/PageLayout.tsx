@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import Head from 'next/head';
 import '../app/globals.css';
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const AllLayout = ({ children }: { children: React.ReactNode }) => {
     const router = usePathname();
@@ -29,7 +30,7 @@ const AllLayout = ({ children }: { children: React.ReactNode }) => {
                     clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
                 },
             }}
-            className={'z-0'}
+            className={''}
         >
             <Head>
                 <title>TASC</title>
@@ -37,9 +38,10 @@ const AllLayout = ({ children }: { children: React.ReactNode }) => {
             <div className="z-50">
                 <Navbar />
             </div>
-            <div className={'dark:text-white dark:bg-[#000027] text-black bg-[#ECCBFF]'}>
+            <div className={'dark:text-white dark:bg-[#000020] text-black bg-[#F3E1FF] h-full z-50'}>
                 {children}
             </div>
+            <Footer />
         </motion.div>
     );
 };

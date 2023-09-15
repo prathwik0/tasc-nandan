@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import NextLink from 'next/link';
 import TASCLogoLight from '../../public/TASCLogoLight.png';
@@ -7,6 +7,7 @@ import Image from 'next/image';
 import useDarkSide from '@/components/UseDarkSide';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import {usePathname} from "next/navigation";
 
 interface NAV_ITEMS {
     title: string;
@@ -24,6 +25,8 @@ const Navbar = () => {
         setDarkSide(checked);
     };
 
+
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
         menuAnimation.start(isOpen ? { x: '100%' } : { x: 0 });
@@ -39,10 +42,18 @@ const Navbar = () => {
             href: '/team',
         },
         {
+            title: 'Faculty',
+            href: '/faculty',
+        },
+        {
             title: 'Events',
             href: '/events',
         },
     ];
+
+    const path = usePathname();
+    const splitPath = path?.split('/') || [];
+    const currentPage = splitPath[1];
 
     return (
         <>
@@ -66,22 +77,26 @@ const Navbar = () => {
                         clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
                     },
                 }}
-                className={'z-50 absolute h-screen w-full'}
+                className={'z-50 fixed h-full w-full'}
             >
                 <div
-                    className={'hidden md:flex bg-[#ECCBFF] rounded-b-xl dark:bg-[#000027]  text-black dark:text-white items-center justify-between py-10 px-10 border-b mx-2 border-zinc-300 dark:border-zinc-800 drop-shadow-md shadow-slate-100 dark:shadow-white'}
+                    className={'hidden md:flex bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-8 px-10 border-b mx-2 border-zinc-300 dark:border-zinc-800 drop-shadow-md shadow-slate-100 dark:shadow-white '}
                 >
-                    <Image
-                        src={colorTheme === 'light' ? TASCLogoLight : TASCLogoDark}
-                        width={100}
-                        height={100}
-                        alt={'TASC'}
-                    />
+                    <NextLink href={'/'}>
+                        <Image
+                            // colorTheme === 'light' ? TASCLogoLight : TASCLogoDark
+                            src={TASCLogoLight}
+                            width={100}
+                            height={100}
+                            alt={'TASC'}
+                            className={'cursor-pointer hover:scale-110 duration-200'}
+                        />
+                    </NextLink>
 
                     <ul className={'flex space-x-5'}>
                         {NAV_ITEMS.map((item) => (
                             <NextLink key={item.title} href={item.href}>
-                                <li className={'text-2xl'}>
+                                <li className={`text-xl font-bold hover:dark:bg-[#ECDBFF] hover:dark:text-black hover:bg-[#000015] hover:text-white px-3 py-2 rounded-xl hover:scale-110 duration-200 ${currentPage === item.title.toLowerCase() ? 'underline underline-offset-4' : 'no-underline'}`}>
                                     {item.title}
                                 </li>
                             </NextLink>
@@ -91,16 +106,19 @@ const Navbar = () => {
                     <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={28} className="duration-200" />
                 </div>
 
-                <div className="flex md:hidden bg-[#ECCBFF] dark:bg-[#000027]  text-black dark:text-white items-center justify-between py-10 px-10 relative mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg">
-                    <Image
-                        src={colorTheme === 'light' ? TASCLogoLight : TASCLogoDark}
-                        width={80}
-                        height={80}
-                        alt={'TASC'}
-                    />
+                <div className="flex md:hidden bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-10 px-10 relative mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg">
+                    <NextLink href={'/'}>
+                        <Image
+                            src={TASCLogoLight}
+                            width={80}
+                            height={80}
+                            alt={'TASC'}
+                            className={'cursor-pointer hover:scale-110 duration-200'}
+                        />
+                    </NextLink>
 
 
-                    <div className={'flex space-x-10'}>
+                    <div className={'flex space-x-10 cursor-pointer'}>
                         <DarkModeSwitch
                             checked={darkSide}
                             onChange={toggleDarkMode}
@@ -111,7 +129,7 @@ const Navbar = () => {
                     </div>
 
                     <motion.div
-                        className={`h-full fixed  w-64 text-white dark:text-black bg-black dark:bg-white p-4 top-0 right-0 transform ${
+                        className={`h-full fixed  w-64 text-white dark:text-black dark:bg-[#ECDBFF] rounded-l-xl bg-[#000015] p-4 top-0 right-0 transform ${
                             isOpen ? 'translate-x-0' : 'translate-x-full'
                         }`}
                         initial={false}

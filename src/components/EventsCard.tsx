@@ -35,11 +35,11 @@ const EventsCard: React.FC<EventsCardProps> = ({ type }) => {
 
     return (
         <>
-            <div className={'md:grid md:grid-cols-3 gap-20'}>
+            <div className={'md:grid md:grid-cols-3 gap-20 mx-20 space-y-10'}>
                 {data.map((item, index) => (
-                    <div key={index} className={'dark:text-white text-black dark:bg-gray-600 shadow-lg rounded-lg p-4'}>
+                    <div key={index} className={'dark:text-white text-black dark:bg-[#000015] bg-white bg-opacity-30 shadow-lg rounded-lg py-10 space-y-5'}>
                         <div className={'flex justify-center w-full'}><Image src={item.image} height={300} width={300} alt={item.imageAlt}/></div>
-                        {item.title}
+                        <h1 className={'text-center text-2xl font-bold'}>{item.title}</h1>
                     </div>
                 ))}
             </div>

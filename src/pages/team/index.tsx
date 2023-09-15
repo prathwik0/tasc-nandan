@@ -1,6 +1,6 @@
 import React from 'react';
 import PageLayout from "@/components/PageLayout";
-import PersonCard from "@/components/PersonCard";
+import PersonCard from "@/components/MemberCard";
 import TeamsPage from "@/components/TeamsPage";
 
 const Team = () => {

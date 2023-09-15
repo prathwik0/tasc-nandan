@@ -9,7 +9,7 @@ const Footer = () => {
             <div className={'hidden md:flex w-full bg-[#ECDBFF] dark:bg-[#000015] py-10 px-16 items-center justify-between'}>
                 <div className={'flex space-x-5'}>
                     <img src="/TASCLogoLight.png" alt="" width={120} height={120}/>
-                    <div className={'border-l-2 dark:border-white border-black items-center pt-1'}>
+                    <div className={'border-l-2 dark:border-white border-black items-center'}>
                         <h1 className={'dark:text-white text-black text-2xl pl-5'}>© 2023 TASC</h1>
                     </div>
                 </div>

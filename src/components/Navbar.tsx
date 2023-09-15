@@ -77,7 +77,7 @@ const Navbar = () => {
                         clipPath: 'polygon(50% 0, 50% 0, 50% 100%, 50% 100%)',
                     },
                 }}
-                className={'z-50 fixed h-full w-full'}
+                className={'z-50 fixed w-full h-full md:h-auto'}
             >
                 <div
                     className={'hidden md:flex bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-8 px-10 border-b mx-2 border-zinc-300 dark:border-zinc-800 drop-shadow-md shadow-slate-100 dark:shadow-white '}
@@ -106,7 +106,7 @@ const Navbar = () => {
                     <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={28} className="duration-200" />
                 </div>
 
-                <div className="flex md:hidden bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-10 px-10 relative mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg">
+                <div className=" flex md:hidden bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-10 px-10 relative mx-2 border-zinc-300 dark:border-zinc-800 shadow-lg">
                     <NextLink href={'/'}>
                         <Image
                             src={TASCLogoLight}

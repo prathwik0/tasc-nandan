@@ -1,7 +1,7 @@
 export const uedata = [
     {
-        id: 1,
         title: 'Freshers Induction Program 2022',
+        image: 'Images/EventBanners/Induction2022.png',
         date: new Date('2022-11-10'),
         time: '12 pm - 1 pm',
         venue: 'Shambhavi (Formal) | Sambhram (Informal)',

@@ -30,11 +30,11 @@ const PersonCard: React.FC<DataProps> = ({year}) => {
     })
     return(
         <>
-            <div className={'md:grid md:grid-cols-3 md:gap-6 md:gap-y-14 lg:px-16 md:px-12 px-6 space-y-10 md:space-y-0 pb-32'}>
+            <div className={'md:grid md:grid-cols-3 md:gap-6 md:gap-y-14 lg:px-16 md:px-12 px-6 space-y-10 md:space-y-0 pb-28'}>
                 {
                     data.map((item, index) => (
                         <>
-                            <div key={index} className={'mx-16 bg-[#f3e7fb] dark:bg-[#272c3a] rounded-lg shadow-xl dark:drop-shadow-md dark:shadow-gray-700  py-8'}>
+                            <div key={index} className={' mx-16 bg-[#f3e7fb] dark:bg-[#272c3a] rounded-lg shadow-xl dark:drop-shadow-md dark:shadow-gray-700  py-8 px-5'}>
                                 <div className={'flex justify-center'}>
                                     <img src={item.image} alt={item.name} className={'object-cover rounded-full lg:w-44 lg:h-44 w-36 h-36   border border-[#e5c6fc] dark:border-[#121928]'}/>
                                 </div>

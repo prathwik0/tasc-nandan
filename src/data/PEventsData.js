@@ -1,7 +1,7 @@
 export const pedata = [
     {
-        id: 1,
         title: 'Freshers Induction Program 2022',
+        image: 'Images/EventBanners/Induction2022.png',
         date: new Date('2022-11-10'),
         time: '12 pm - 1 pm',
         venue: 'Shambhavi (Formal) | Sambhram (Informal)',
@@ -10,16 +10,16 @@ export const pedata = [
         reportLink: 'https://drive.google.com/file/d/1DUTfywPhTt9-0HCigmD1hTsSpAZxJnkI/view',
     },
     {
-        id: 2,
         title: 'Industrial Visit',
+        image: 'Images/EventBanners/IV22.png',
         date: new Date('2022-11-17'),
         organizers: '5th sem AIML students',
         description: 'The student committee of the Department of AIML organised a 3-day industrial visit to Kochi for the students of Vth sem. Maker Village was one of the industries that we had visited. Faculties from the department of AIML, Mr. Mahesh B.L. and Ms. Nisha accompanied the students for the visit.',
         reportLink: 'https://drive.google.com/file/d/1sdWRVoY0cx1RgU6Md_v9jt2RXyzvHcGl/view',
     },
     {
-        id: 3,
         title: 'Flush the Brush',
+        image: 'Images/EventBanners/FTB22.png',
         date: new Date('2022-12-17'),
         time: '11 am  - 12:30 pm',
         guests: 'Mr. Sathish Nayak - Digital Media Co-Ordinator, Nitte University, Mr. Santhosh S - Asst. Professor Gd. II - Department of ISE, Mrs. Preethi Salian K - Asst. Professor Gd. II - Department of ISE',
@@ -29,8 +29,8 @@ export const pedata = [
         reportLink: 'https://drive.google.com/file/d/15SXgxucRnedu-kXlwtKx8Tx8BAxbdK5m/view',
     },
     {
-        id: 4,
         title: 'IoT Workshop',
+        image: 'Images/EventBanners/IoTW22.png',
         date: new Date('2022-12-17'),
         time: '11 am  - 12:30 pm',
         organizers: 'TASC',
@@ -39,8 +39,8 @@ export const pedata = [
         reportLink: 'https://drive.google.com/file/d/1d57fKsd41adSmn4Pyl8_Dy8dp3KmeeXu/view',
     },
     {
-        id: 5,
         title: 'Algorithm Arena',
+        image: 'Images/EventBanners/AlgArena23.png',
         date: new Date('2023-2-22'),
         time: '11 am  - 12:30 pm',
         winners: 'Shreyas Saunshi',
@@ -49,8 +49,8 @@ export const pedata = [
         reportLink: 'https://drive.google.com/file/d/1XQY90qFDJpw9lXmk6KY6K4zCeMvkElvt/view',
     },
     {
-        id: 6,
         title: 'Code Rescue',
+        image: 'Images/EventBanners/CodeRe23.png',
         date: new Date('2023-3-25'),
         time: '11 am  - 12:30 pm',
         organizers: 'Parth Gupta, Nishanth N',
@@ -59,8 +59,8 @@ export const pedata = [
         reportLink: 'https://drive.google.com/file/d/1K19mc4dvFCc8EMM1SdICR8Jc9QmTsa-1/view',
     },
     {
-        id: 7,
         title: 'Shuttle Smash',
+        image: 'Images/EventBanners/Shuttle23.png',
         date: new Date('2023-3-30'),
         time: '4:30 pm  - 6:30 pm',
         organizers: 'Apeksha Shetty, Ajay Braggs',
@@ -69,8 +69,8 @@ export const pedata = [
         reportLink: 'https://drive.google.com/file/d/1Te4DRwdwhF5wC0RUxlprBH2Z0H6nwtDO/view',
     },
     {
-        id: 8,
         title: 'Seeing and Understanding: A Machine Perspective',
+        image: 'Images/EventBanners/SUMP23.png',
         date: new Date('2023-4-1'),
         time: '9 am - 1 pm',
         venue: 'Sowparnika Hall',
@@ -80,8 +80,8 @@ export const pedata = [
         reportLink: 'https://drive.google.com/file/d/1Qv8uFuWM-Dp3zCne5Js-EZsoHq9AX9Ak/view',
     },
     {
-        id: 9,
         title: 'Mixology',
+        image: 'Images/EventBanners/Mixology23.png',
         date: new Date('2023-4-13'),
         time: '3:30 pm - 4:30 pm',
         organizers: 'Sambhram Shetty',

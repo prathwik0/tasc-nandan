@@ -18,7 +18,7 @@ const PersonCard: React.FC = () => {
                 {
                     Faculty.map((item, index) => (
                         <>
-                            <div key={index} className={'mx-16 bg-[#f3e7fb] dark:bg-[#272c3a] rounded-lg shadow-xl dark:drop-shadow-md dark:shadow-gray-700  py-8'}>
+                            <div key={index} className={'mx-16 bg-[#f3e7fb] dark:bg-[#272c3a] rounded-lg shadow-xl dark:drop-shadow-md dark:shadow-gray-700  py-8 px-6'}>
                                 <div className={'flex justify-center'}>
                                     <img src={item.image} alt={item.name} className={'object-cover rounded-full lg:w-44 lg:h-44 w-36 h-36   border border-[#e5c6fc] dark:border-[#121928]'}/>
                                 </div>

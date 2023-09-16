@@ -313,7 +313,7 @@ export const TwoThree =[
     },
     {
         image: '/Images/Team/Ameya.jpg',
-        name: 'Ameya G Kowshik',
+        name: 'Ameya Guru Kowshik',
         role: '2nd Year CR',
         instagram: 'https://instagram.com/ameya_1074',
         linkedin: 'https://www.linkedin.com/in/ameya-kowshik-b6042a284',

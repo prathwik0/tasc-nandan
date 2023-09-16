@@ -242,7 +242,7 @@ export const TwoThree =[
         github: 'https://github.com/KhushiSBhimani',
     },
     {
-        image: '/Images/Team/Nihal.jpg',
+        image: '/Images/Team/Nihal.png',
         name: 'Nihal Mohan Shettigar',
         role: 'Social Media & Publicity Coordinator',
         quote: 'Have you ever had a dream, that you -um, you had, your, you-you could, you will do, you-you wants, you could do so, you-you will do so, you-you will do, you could-you, you want, you want him to do you so much you could do anything?',
@@ -298,7 +298,7 @@ export const TwoThree =[
         linkedin: 'https://www.linkedin.com/in/iamrajharshit',
     },
     {
-        image: '/Images/Team/Zihab.jpg',
+        image: '/Images/Team/Zihab.png',
         name: 'Mohammed Zihab',
         role: 'Special Interest Group Asst.',
     },
@@ -310,5 +310,13 @@ export const TwoThree =[
         instagram: 'https://instagram.com/sinchu_02?igshid=YTQwZjQ0NmI0OA==',
         linkedin: 'https://www.linkedin.com/in/sinchana-s742700222/',
         github: 'https://github.com/sinchanabhandary',
+    },
+    {
+        image: '/Images/Team/Ameya.jpg',
+        name: 'Ameya G Kowshik',
+        role: '2nd Year CR',
+        instagram: 'https://instagram.com/ameya_1074',
+        linkedin: 'https://www.linkedin.com/in/ameya-kowshik-b6042a284',
+        github: 'https://github.com/ameyakowshik',
     },
 ]

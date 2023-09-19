@@ -103,7 +103,7 @@ const Navbar = () => {
                     <DarkModeSwitch checked={darkSide} onChange={toggleDarkMode} size={28} className="duration-200" />
                 </div>
 
-                <div className=" flex md:hidden bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-10 px-10 relative border border-zinc-300 dark:border-zinc-800 shadow-lg">
+                <div className=" flex md:hidden bg-[#ECDBFF] rounded-b-xl dark:bg-[#000015]  text-black dark:text-white items-center justify-between py-6 px-10 relative border border-zinc-300 dark:border-zinc-800 shadow-lg">
                     <NextLink href={'/'}>
                         <Image
                             src={'/TASCLogo.png'}

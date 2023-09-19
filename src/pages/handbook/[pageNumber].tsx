@@ -215,7 +215,7 @@ const Handbook = () => {
         <>
             <PageLayout>
                 <div className={'rounded-xl flex justify-center w-full items-center h-screen'}>
-                    <iframe src={`https://online.flippingbook.com/view/7051194/${pathPage}`} width="100%" height="600" className={'px-10'}/>
+                    <iframe src={`https://heyzine.com/flip-book/d49adcee6e.html#page/${pathPage}`} width="100%" height="600" className={'px-10'}/>
                 </div>
             </PageLayout>
         </>

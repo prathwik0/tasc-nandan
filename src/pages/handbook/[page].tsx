@@ -141,28 +141,28 @@ const Handbook = () => {
             <PageLayout>
                 <>
                     <motion.div
-                        className={'hidden md:flex items-center h-screen justify-center space-x-10'}
+                        className={'hidden md:flex items-center h-screen justify-center space-x-10 overflow-x-hidden'}
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <Image src={`/Images/Handbook/${leftPage}.jpg`} alt={`${leftPage}`} height={7000} width={500} />
+                        <Image src={`/Images/Handbook/${leftPage}.jpg`} alt={`${leftPage}`} height={700} width={500} />
                         {pathPage === 1 ? null : (
                             <Image src={`/Images/Handbook/${rightPage}.jpg`} alt={`${rightPage + 1}`} height={700} width={500} />
                         )}
                     </motion.div>
                     <motion.div
-                        className={'flex md:hidden items-center h-screen justify-center py-32'}
+                        className={'flex  md:hidden items-center h-screen justify-center py-32 overflow-x-hidden'}
                         initial={{ opacity: 0, x: -100 }}
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
                     >
                         <div className={'flex space-x-5'}>
-                            <Image src={`/Images/Handbook/${leftPage}.jpg`} alt={`${leftPage}`} height={280} width={200} />
+                            <Image src={`/Images/Handbook/${leftPage}.jpg`} alt={`${leftPage}`} height={250} width={180} />
                             {pathPage === 1 ? null : (
-                                <Image src={`/Images/Handbook/${rightPage}.jpg`} alt={`${rightPage + 1}`} height={280} width={200} />
+                                <Image src={`/Images/Handbook/${rightPage}.jpg`} alt={`${rightPage + 1}`} height={250} width={180} />
                             )}
                         </div>
                     </motion.div>

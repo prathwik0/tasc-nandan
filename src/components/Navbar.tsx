@@ -47,6 +47,10 @@ const Navbar = () => {
             title: 'Events',
             href: '/events',
         },
+        {
+            title: 'Handbook',
+            href: '/handbook/1',
+        },
     ];
 
     const path = usePathname();
